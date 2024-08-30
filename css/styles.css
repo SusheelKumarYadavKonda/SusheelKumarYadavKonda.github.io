@@ -98,10 +98,51 @@ nav ul li a:hover {
     color: #4CAF50;
 }
 
-.about-text p {
+.about-text h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-text p,
+.about-text ul {
     margin-bottom: 15px;
     font-size: 1.2em;
     color: #555;
+}
+
+.about-text ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.project,
+.certification {
+    margin-bottom: 20px;
+}
+
+.project h3,
+.certification h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.project p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.project a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project a:hover {
+    color: #333;
 }
 
 footer {
@@ -115,4 +156,19 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin: 0 0 20px 0;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
 }
